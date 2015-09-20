@@ -1,16 +1,36 @@
 body{
-  background-image: url('../assets/gradientbg.jpg');
-  background-size: 100%, 600px;
+  padding: 0;
+  color:white;
   background-repeat: no-repeat;
+  background-color: black;
+}
+svg{
+  width: 80%; 
+  margin: 0 auto 0px auto;
+  display: block;
+  text-transform: uppercase; 
+}
+img.desaturate { 
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%); 
+}
+img:hover{
+    -webkit-filter: grayscale(0); 
+    filter: grayscale(0); 
 }
 
+/* ------ CLASSSES ------- */
+.row{
+  padding: 0;
+  margin: 0;
+}
 .large-header {
-  position: relative;
+  position: fixed;
   width: 100%;
   overflow: hidden;
   background-size: cover;
   background-position: center center;
-  z-index: 4;
+  z-index: -1;
   margin: 0;
   padding: 0;
 }
@@ -19,20 +39,77 @@ body{
 }
 .textAnimation{
   position: relative;
-  top: -600px;
+  top: 100px;
 }
 .content{
-  font: 800 14.5em/1  'Open Sans', Impact; 
+  position: absolute;
+  font: 800 14.5em/1  'Open Sans', Stalinist One; 
+  padding: 0;
+  margin: 0;
 }
 .content p{
-  font-family: 'Architects Daughter', cursive;
+  font-family: 'Stalinist One', cursive;
   font-size: 20px;
-  color: orange;
+  color: white;
   text-align: center;
 }
-svg{
-  width: 50%;
-  margin: 0 auto 50px;
+.about{
   display: block;
-  text-transform: uppercase; 
+  margin: auto;
+  color: white;
+  font-family: 'Jura', sans-serif;
+}
+.aboutlinks{
+  display: block;
+  margin: 50px auto;
+}
+.aboutimg{
+  float: left;
+  margin: 10px;
+}
+.skills{
+  margin: 40px 0 0 0;
+  font-family: 'Jura', sans-serif;
+}
+.skillHorizontal{
+  width: 100px;
+  float: left;
+  margin: 10px;
+}
+.skillVertical{
+  height: 100px;
+  float: left;
+  margin: 10px;
+}
+.works{
+  margin: 40px 0 0 0;
+  font-family: 'Jura', sans-serif;
+}
+.ttt{
+  width: 200;
+  height: 180px;
+  margin: 5px;
+}
+.contact{
+  display: block;
+  margin: auto;
+  color: white;
+  font-family: 'Jura', sans-serif;
+}
+.contactlinks{
+  float: left;
+  margin: 5px;
+}
+.mail{
+  margin: 30px;
+}
+
+/* ------ ID ------ */
+#container-fix{
+  padding: 0;
+  margin: 0;
+}
+
+#jwd{
+  font-family: 'Jura', sans-serif;
 }
